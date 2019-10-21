@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript - Variables</title>
+</head>
+
+<body>
+    <center>
+        <h1>01 // JavaScript - Variables</h1>
+    </center>
+
+    <h2>The main program</h2>
+    <script>
+        "use strict"
+        // Define a variable 
+        var myVariable = "This is a variable!";
+        document.write("myVariable containt [  " + myVariable + "]");
+
+        // Using a variable
+        var number1 = 5;
+        document.write("<br> Avant :" + number1);
+        number1 = 3;
+        document.write("<br> Après :" + number1);
+
+        /* To add, subtract, multiply, 
+        divide, etc., we do like so:*/
+        number1 = number1 + 5;
+        document.writeln("<br> number 1: " + number1);
+        number1 = number1 - 6;
+        var number2 = number1 * 10;
+        var number3 = number2 / number1;
+        document.writeln("<br> number 1: " + number1);
+        document.writeln("<br>" + number2);
+
+
+
+        // Types of variables 
+
+        var myInteger = 12; // 32-bit number (from -2,147,483,648 to 2,147,483,647)
+        var myLong = 9310141419482; 
+        // 64-bit number (from -9,223,372,036,854,775,808 to9, 223, 372, 036, 854, 775, 807)
+        var myFloat = 5.5; // 32-bit floating-point number (decimal)
+        var myDouble = 9310141419482.22; // 64-bit floating-point number
+        var myBoolean = true; // 1-bit true/false (0 or 1)
+        var myBoolean2 = false;
+        var myNotANumber = NaN;
+        var NaN_Example = 0 / 0; // NaN: Division by Zero is not possible
+        var notDefined; // undefined: we didn't define it to anything yet
+
+        document.write("<br> <strong>Types of variables </strong>");
+        document.writeln("<br>Integer : " + myInteger);
+        document.writeln("<br>Long : " + myLong);
+        document.writeln("<br>Float : " + myFloat);
+        document.writeln("<br>Double : " + myDouble);
+        document.writeln("<br>Boolean : " + myBoolean);
+        document.writeln("<br>Not a number : " + myNotANumber);
+        document.writeln("<br>NaN Example : " + NaN_Example);
+        document.writeln("<br>not Defined : " + notDefined);
+       
+    </script>
+
+</body>
+
+</html>
